@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FolaImg from "../img/home/image01.jpg";
 import { HomeProps } from "../types/HomeProps";
-// import Typical from "react-typical";
-// import Header from "./Header";
-// import BackgroundText from "./BackgroundText";
-// import Background2Text from "./BackroundText2";
 
-//import components
 
 const Home: React.FC<HomeProps> = () => {
   const [showHello, setShowHello] = useState(false);
