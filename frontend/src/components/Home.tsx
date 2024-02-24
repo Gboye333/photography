@@ -74,7 +74,7 @@ const Home: React.FC<HomeProps> = () => {
         to organisations, and has spent years honing his skill. A number of
         publications
         <br /> and exhibitions have showcased his work. He is presently residing
-        in the UK.it 
+        in the UK.
         <br />
         Afolabi likes to spend his free time discovering new places, eating new
         <br />
