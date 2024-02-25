@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import FolaImg from "../img/home/image01.jpg";
 import { HomeProps } from "../types/HomeProps";
 
-
 const Home: React.FC<HomeProps> = () => {
   const [showHello, setShowHello] = useState(false);
   const [showPage, setShowPage] = useState(false);
@@ -16,6 +15,7 @@ const Home: React.FC<HomeProps> = () => {
     }, 1000);
     return () => clearTimeout(timeout);
   }, []);
+
   const containerStyle: React.CSSProperties = {
     backgroundColor: "#1E1E2A",
     display: "flex",
@@ -23,27 +23,44 @@ const Home: React.FC<HomeProps> = () => {
     flexDirection: "column",
     height: "100vh",
     transition: "opacity 0.5s ease-in-out",
-    opacity: showHello ? 1 : 0, // Set initial opacity based on showHello state
+    opacity: showHello ? 1 : 0,
     overflowY: "auto",
     overflowX: "hidden",
   };
 
   const helloStyle: React.CSSProperties = {
     opacity: showHello ? 1 : 0,
-    transition: "opacity 0.5s ease-in", // Apply different easing for the "HELLO" text
+    transition: "opacity 0.5s ease-in",
   };
 
   const pageStyle: React.CSSProperties = {
     opacity: showPage ? 1 : 0,
-    transition: "opacity 0.5s ease-out", // Apply different easing for the rest of the page
+    transition: "opacity 0.5s ease-out",
   };
 
   const imageStyle: React.CSSProperties = {
-    // maxWidth: "100%",
     maxHeight: "100%",
     borderRadius: "50%",
     width: "150px",
     marginTop: "50px",
+  };
+
+  const buttonContainerStyle: React.CSSProperties = {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    marginBottom: "10px",
+    marginTop: "20px",
+  };
+
+  const buttonStyle: React.CSSProperties = {
+    border: "1px solid #gray",
+    transition: "border-color 0.3s",
+    color: "#fff",
+    fontFamily: "anek",
+    padding: "10px 20px",
+    borderRadius: "5px",
+    margin: "5px",
   };
 
   return (
@@ -58,7 +75,7 @@ const Home: React.FC<HomeProps> = () => {
         </p>
       )}
       <p
-        className="text-white font-anek text-1xl sm:font-bold lg:text-2xl pt-7 lg:font-extralight ml-12"
+        className="text-white font-anek text-1xl sm:font-extralight xs:font-extralight lg:text-2xl pt-7 lg:font-extralight px-4 sm:px-8 lg:px:12  font-extralight !important"
         style={pageStyle}
       >
         Afolabi Babarinde was raised in Nigeria. Afolabi developed a passion for
@@ -75,22 +92,32 @@ const Home: React.FC<HomeProps> = () => {
         <br />
         delicacies, or developing original ideas.
       </p>
-      <div className="pb-2 border-b-2 border-gray-700 w-1/6"></div>
-      <div className="flex flex-col items-center justify-center mt-8">
-        <div className="flex flex-wrap justify-center lg:justify-between">
-          <button className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-3 px-7 rounded mr-4 tracking-widest">
-            HOME
-          </button>
-          <button className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest">
-            PORTRAITS
-          </button>
-          <button className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest">
-            WEDDING
-          </button>
-          <button className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest">
-            CONTACT
-          </button>
-        </div>
+      <div className="pb-4 border-b-2 border-gray-700 w-1/6"></div>
+      <div style={buttonContainerStyle}>
+        <button
+          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-3 px-7 rounded mr-4 tracking-widest"
+          style={buttonStyle}
+        >
+          HOME
+        </button>
+        <button
+          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest"
+          style={buttonStyle}
+        >
+          PORTRAITS
+        </button>
+        <button
+          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest"
+          style={buttonStyle}
+        >
+          WEDDING
+        </button>
+        <button
+          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest"
+          style={buttonStyle}
+        >
+          CONTACT
+        </button>
       </div>
     </div>
   );
