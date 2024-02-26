@@ -120,7 +120,7 @@ const Home: React.FC<HomeProps> = () => {
       {`
           @media (max-width: 768px) {
             .text-base {
-              font-size: 0.76rem; /* Adjust font size for smaller screens */
+              font-size: 0.7rem; /* Adjust font size for smaller screens */
             }
           }
         `}
