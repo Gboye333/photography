@@ -79,15 +79,15 @@ const Home: React.FC<HomeProps> = () => {
         style={pageStyle}
       >
         Afolabi Babarinde was raised in Nigeria. Afolabi developed a passion for
-        photography at a <br />
+        photography at a 
         young age that has since blossomed into a decade-long vocation. He has
-        worked with a <br />
+        worked with a 
         diverse spectrum of clientele, from individuals to organisations, and
-        has spent years honing his <br />
+        has spent years honing his 
         skill. A number of publications and exhibitions have showcased his work.
-        He is presently <br /> residing in the UK. Afolabi likes to spend his
+        He is presently  residing in the UK. Afolabi likes to spend his
         free time discovering new places,
-        <br /> eating new delicacies, or developing original ideas.
+         eating new delicacies, or developing original ideas.
       </p>
       <div className="pb-2 border-b-2 border-gray-700 w-1/6"></div>
       <div style={buttonContainerStyle}>
@@ -120,7 +120,7 @@ const Home: React.FC<HomeProps> = () => {
       {`
           @media (max-width: 768px) {
             .text-base {
-              font-size: 0.7rem; /* Adjust font size for smaller screens */
+              font-size: 0.7rem;
             }
           }
         `}
