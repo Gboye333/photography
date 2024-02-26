@@ -57,10 +57,10 @@ const Home: React.FC<HomeProps> = () => {
     border: "1px solid #gray",
     transition: "border-color 0.3s",
     color: "#fff",
-    fontFamily: "anek",
     padding: "10px 20px",
     borderRadius: "5px",
     margin: "5px",
+    marginTop: "20px",
   };
 
   return (
@@ -75,45 +75,42 @@ const Home: React.FC<HomeProps> = () => {
         </p>
       )}
       <p
-        className="text-white font-anek text-1xl sm:font-extralight xs:font-extralight lg:text-2xl pt-7 lg:font-extralight px-4 sm:px-8 lg:px:12  font-extralight !important"
+        className="text-white font-anek text-base lg:text-lg leading-normal px-4 sm:px-8 lg:px-12 font-extralight flex flex-col items-start mt-5 sm:text-sm md:text-xs"
         style={pageStyle}
       >
         Afolabi Babarinde was raised in Nigeria. Afolabi developed a passion for
-        <br /> photography at a young age that has since blossomed into a
-        decade-long
-        <br /> vocation. He has worked with a diverse spectrum of clientele,
-        from individuals <br />
-        to organisations, and has spent years honing his skill. A number of
-        publications
-        <br /> and exhibitions have showcased his work. He is presently residing
-        in the UK.
-        <br />
-        Afolabi likes to spend his free time discovering new places, eating new
-        <br />
-        delicacies, or developing original ideas.
+        photography at a <br />
+        young age that has since blossomed into a decade-long vocation. He has
+        worked with a <br />
+        diverse spectrum of clientele, from individuals to organisations, and
+        has spent years honing his <br />
+        skill. A number of publications and exhibitions have showcased his work.
+        He is presently <br /> residing in the UK. Afolabi likes to spend his
+        free time discovering new places,
+        <br /> eating new delicacies, or developing original ideas.
       </p>
-      <div className="pb-4 border-b-2 border-gray-700 w-1/6"></div>
+      <div className="pb-2 border-b-2 border-gray-700 w-1/6"></div>
       <div style={buttonContainerStyle}>
         <button
-          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-3 px-7 rounded mr-4 tracking-widest"
+          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-3 px-7 rounded mr-4 tracking-widest font-extralight"
           style={buttonStyle}
         >
           HOME
         </button>
         <button
-          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest"
+          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
           style={buttonStyle}
         >
           PORTRAITS
         </button>
         <button
-          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest"
+          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
           style={buttonStyle}
         >
           WEDDING
         </button>
         <button
-          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest"
+          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
           style={buttonStyle}
         >
           CONTACT
