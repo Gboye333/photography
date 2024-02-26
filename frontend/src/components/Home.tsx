@@ -75,7 +75,7 @@ const Home: React.FC<HomeProps> = () => {
         </p>
       )}
       <p
-        className="text-white font-anek text-base lg:text-lg leading-normal px-4 sm:px-8 lg:px-12 font-extralight flex flex-col items-start mt-5 sm:text-sm md:text-xs"
+        className="text-white font-anek text-base lg:text-lg leading-normal px-4 sm:px-8 lg:px-12 font-extralight flex flex-col items-start mt-5 "
         style={pageStyle}
       >
         Afolabi Babarinde was raised in Nigeria. Afolabi developed a passion for
@@ -116,6 +116,15 @@ const Home: React.FC<HomeProps> = () => {
           CONTACT
         </button>
       </div>
+      <style>
+      {`
+          @media (max-width: 768px) {
+            .text-base {
+              font-size: 0.76rem; /* Adjust font size for smaller screens */
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
