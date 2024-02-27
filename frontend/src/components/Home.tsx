@@ -118,9 +118,9 @@ const Home: React.FC<HomeProps> = () => {
       </div>
       <style>
         {`
-          @media (max-width: 768px) {
+          @media (max-width: 600px) {
             .text-base {
-              font-size: 0.7rem;
+              font-size: 0.9rem;
             }
           }
         `}
