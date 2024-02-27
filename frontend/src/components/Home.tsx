@@ -24,7 +24,7 @@ const Home: React.FC<HomeProps> = () => {
     height: "100vh",
     transition: "opacity 0.5s ease-in-out",
     opacity: showHello ? 1 : 0,
-    overflowY: "auto",
+    overflowY: "scroll",
     overflowX: "hidden",
   };
 
