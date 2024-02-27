@@ -64,60 +64,73 @@ const Home: React.FC<HomeProps> = () => {
   };
 
   return (
-    <div style={containerStyle}>
-      <img src={FolaImg} alt="Fola Image" style={imageStyle} />
-      {showHello && (
-        <p
-          className="text-pink-400 font-anek text-5xl mt-9 tracking-widest"
-          style={helloStyle}
-        >
-          HELLO
-        </p>
-      )}
-      <div className="max-w-[650px] ">
-        <p
-          className="text-white text-center font-anek text-base lg:text-lg leading-normal px-4 sm:px-8 lg:px-12 font-extralight mt-5"
-          style={pageStyle}
-        >
-          Afolabi Babarinde was raised in Nigeria. Afolabi developed a passion
-          for photography at a young age that has since blossomed into a
-          decade-long vocation. He has worked with a diverse spectrum of
-          clientele, from individuals to organisations, and has spent years
-          honing his skill. A number of publications and exhibitions have
-          showcased his work. He is presently residing in the UK. Afolabi likes
-          to spend his free time discovering new places, eating new delicacies,
-          or developing original ideas.
-        </p>
-      </div>
-
-      <div className="pb-2 border-b-2 border-gray-700 w-1/6"></div>
-      <div style={buttonContainerStyle}>
-        <button
-          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-3 px-7 rounded mr-4 tracking-widest font-extralight"
-          style={buttonStyle}
-        >
-          HOME
-        </button>
-        <button
-          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
-          style={buttonStyle}
-        >
-          PORTRAITS
-        </button>
-        <button
-          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
-          style={buttonStyle}
-        >
-          WEDDING
-        </button>
-        <button
-          className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
-          style={buttonStyle}
-        >
-          CONTACT
-        </button>
-      </div>
+    <div>
       <style>
+        {`
+          @layer utilities {
+            @screen sm {
+              html, body {
+                overflow-y: auto;
+                overscroll-behavior-y: none;
+              }
+            }
+          }
+        `}
+      </style>
+      <div style={containerStyle}>
+        <img src={FolaImg} alt="Fola Image" style={imageStyle} />
+        {showHello && (
+          <p
+            className="text-pink-400 font-anek text-5xl mt-9 tracking-widest"
+            style={helloStyle}
+          >
+            HELLO
+          </p>
+        )}
+        <div className="max-w-[650px] ">
+          <p
+            className="text-white text-center font-anek text-base lg:text-lg leading-normal px-4 sm:px-8 lg:px-12 font-extralight mt-5"
+            style={pageStyle}
+          >
+            Afolabi Babarinde was raised in Nigeria. Afolabi developed a passion
+            for photography at a young age that has since blossomed into a
+            decade-long vocation. He has worked with a diverse spectrum of
+            clientele, from individuals to organisations, and has spent years
+            honing his skill. A number of publications and exhibitions have
+            showcased his work. He is presently residing in the UK. Afolabi
+            likes to spend his free time discovering new places, eating new
+            delicacies, or developing original ideas.
+          </p>
+        </div>
+
+        <div className="pb-2 border-b-2 border-gray-700 w-1/6"></div>
+        <div style={buttonContainerStyle}>
+          <button
+            className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-3 px-7 rounded mr-4 tracking-widest font-extralight"
+            style={buttonStyle}
+          >
+            HOME
+          </button>
+          <button
+            className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
+            style={buttonStyle}
+          >
+            PORTRAITS
+          </button>
+          <button
+            className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
+            style={buttonStyle}
+          >
+            WEDDING
+          </button>
+          <button
+            className="border border-gray-700 hover:border-pink-400 transition-colors duration-300 text-white font-anek py-2 px-4 rounded mr-4 tracking-widest font-extralight"
+            style={buttonStyle}
+          >
+            CONTACT
+          </button>
+        </div>
+        {/* <style>
         {`
           @media screen and (max-width: 375px) { 
             html, body {
@@ -126,7 +139,8 @@ const Home: React.FC<HomeProps> = () => {
             }
           }
         `}
-      </style>
+      </style> */}
+      </div>
     </div>
   );
 };
