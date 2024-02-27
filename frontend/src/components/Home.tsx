@@ -118,20 +118,13 @@ const Home: React.FC<HomeProps> = () => {
         </button>
       </div>
       <style>
-        {/* {`
-          @media (max-width: 600px) {
-            .text-base {
-              font-size: 0.9rem;
+        {`
+          @media screen and (max-width: 375px) { 
+            html, body {
+              overflow-y: auto;
             }
           }
-        `} */}
-        {/* {`
-          @media (min-width: 700px) {
-            .text-base {
-              max-width: 55%; 
-            }
-          }
-        `} */}
+        `}
       </style>
     </div>
   );
