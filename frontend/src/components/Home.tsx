@@ -21,7 +21,7 @@ const Home: React.FC<HomeProps> = () => {
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
-    height: "100vh",
+    minHeight: "100vh",
     transition: "opacity 0.5s ease-in-out",
     opacity: showHello ? 1 : 0,
     overflowY: "auto",
@@ -74,21 +74,22 @@ const Home: React.FC<HomeProps> = () => {
           HELLO
         </p>
       )}
-      <div className="flex items-center justify-center">
-      <p
-        className="text-white font-anek text-base lg:text-lg leading-normal px-4 sm:px-8 lg:px-12 font-extralight mt-5 "
-        style={pageStyle}
-      >
-        Afolabi Babarinde was raised in Nigeria. Afolabi developed a passion for
-        photography at a young age that has since blossomed into a decade-long
-        vocation. He has worked with a diverse spectrum of clientele, from
-        individuals to organisations, and has spent years honing his skill. A
-        number of publications and exhibitions have showcased his work. He is
-        presently residing in the UK. Afolabi likes to spend his free time
-        discovering new places, eating new delicacies, or developing original
-        ideas.
-      </p>
+      <div className="max-w-[650px] ">
+        <p
+          className="text-white text-center font-anek text-base lg:text-lg leading-normal px-4 sm:px-8 lg:px-12 font-extralight mt-5"
+          style={pageStyle}
+        >
+          Afolabi Babarinde was raised in Nigeria. Afolabi developed a passion
+          for photography at a young age that has since blossomed into a
+          decade-long vocation. He has worked with a diverse spectrum of
+          clientele, from individuals to organisations, and has spent years
+          honing his skill. A number of publications and exhibitions have
+          showcased his work. He is presently residing in the UK. Afolabi likes
+          to spend his free time discovering new places, eating new delicacies,
+          or developing original ideas.
+        </p>
       </div>
+
       <div className="pb-2 border-b-2 border-gray-700 w-1/6"></div>
       <div style={buttonContainerStyle}>
         <button
@@ -117,20 +118,20 @@ const Home: React.FC<HomeProps> = () => {
         </button>
       </div>
       <style>
-        {`
+        {/* {`
           @media (max-width: 600px) {
             .text-base {
               font-size: 0.9rem;
             }
           }
-        `}
-        {`
+        `} */}
+        {/* {`
           @media (min-width: 700px) {
             .text-base {
               max-width: 55%; 
             }
           }
-        `}
+        `} */}
       </style>
     </div>
   );
