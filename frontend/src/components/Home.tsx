@@ -21,10 +21,10 @@ const Home: React.FC<HomeProps> = () => {
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
-    minHeight: "100vh",
+    height: "100vh",
     transition: "opacity 0.5s ease-in-out",
     opacity: showHello ? 1 : 0,
-    overflowY: "auto",
+    overflowY: "scroll",
     overflowX: "hidden",
   };
 
