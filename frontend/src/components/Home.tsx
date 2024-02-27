@@ -124,6 +124,13 @@ const Home: React.FC<HomeProps> = () => {
             }
           }
         `}
+        {`
+          @media (min-width: 700px) {
+            .text-base {
+              max-width: 55%; 
+            }
+          }
+        `}
       </style>
     </div>
   );
