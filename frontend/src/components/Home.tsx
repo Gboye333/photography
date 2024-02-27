@@ -122,6 +122,7 @@ const Home: React.FC<HomeProps> = () => {
           @media screen and (max-width: 375px) { 
             html, body {
               overflow-y: auto;
+              overscroll-behavior-y: none;
             }
           }
         `}
