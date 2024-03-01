@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/portraitPage";
 //import Link
 // import { Link } from "react-router-dom";
 
