@@ -2,7 +2,7 @@ import React from "react";
 //import Link
 // import { Link } from "react-router-dom";
 
-const Contact: React.FC = () => {
+const Portrait: React.FC = () => {
   return (
     <section className="section bg-[#1E1E2A]">
   <h1>Wedding</h1>
@@ -10,4 +10,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default Portrait;

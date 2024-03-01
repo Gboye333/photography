@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./src/animation.css"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/animation.css",
+  ],
   theme: {
     fontFamily: {
       primary: "Playfair Display",
@@ -31,14 +35,18 @@ export default {
           200: "#C4A484",
           300: "#E1C16E",
           400: "#C19A6B",
-          customColor: "#E1C16E",
+          // customColor: "#E1C16E",
         },
-        spacing: {
-          "15px": "15px",
-        },
+        // harsh: {
+        // 200: "#1E1E2A"
+        // },
+        // spacing: {
+        //   "15px": "15px",
+        // },
         primary: "#0E1112",
         grey: "#484B4B",
         accent: "#EEF7F9",
+        harsh: "#E1E1E2A"
       },
     },
     container: {

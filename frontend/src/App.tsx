@@ -1,21 +1,24 @@
 import React from "react";
 
-//import components
-import Home from "./components/Home";
-import AnimRoutes from "./components/AnimRoutes";
-
 //import routes
-import { BrowserRouter as Router } from "react-router-dom";
-//import motion
-//import { motion } from 'framer-motion'
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import {Contact, Home, Portrait, Wedding} from "../src/pages";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Portrait from "./pages/portrait";
+import Wedding from "./pages/Wedding";
 const App: React.FC = () => {
   return (
     <>
-      <Router>
-        <AnimRoutes />
-        <Home />
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
+         <Route path="/Portrait" element={<Portrait/>}/>
+         <Route path="/Wedding" element={<Wedding/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };

@@ -1,12 +1,9 @@
-
-
 // import React from "react";
 // //import pages
 // import Home from "../pages/Home";
-// import About from "../pages/About";
-// import Contact from "../pages/Contact";
-// import Portfolio from "../pages/Portfolio";
-// import Albums from "../pages/Albums";
+// import PortraitPage from "../pages/portraitPage";
+// import Contacts from "../pages/Contact";
+// import Weddings from "../pages/Weddings";
 
 // // import Routes route & useLocation hook
 // import { Routes, Route } from "react-router-dom";
@@ -15,10 +12,9 @@
 //   return (
 //     <Routes>
 //       <Route path="/" element={<Home />} />
-//       <Route path="/about" element={<About />} />
-//       <Route path="/albums" element={<Albums />} />
-//       <Route path="/contact" element={<Contact />} />
-//       <Route path="/portfolio" element={<Portfolio />} />
+//       <Route path="/portaits" element={<PortraitPage />} />
+//       <Route path="/weddings" element={<Weddings />} />
+//       <Route path="/contacts" element={<Contacts />} />
 //     </Routes>
 //   );
 // };

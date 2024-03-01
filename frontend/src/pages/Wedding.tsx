@@ -2,12 +2,12 @@ import React from "react";
 //import Link
 // import { Link } from "react-router-dom";
 
-const Contact: React.FC = () => {
+const Wedding: React.FC = () => {
   return (
     <section className="section bg-[#1E1E2A]">
-  <h1>Wedding</h1>
+      <h1>Wedding</h1>
     </section>
   );
 };
 
-export default Contact;
+export default Wedding;
